@@ -16,9 +16,9 @@ export default function PricingPlans() {
         {/* 注意書き */}
         <div className="bg-pink/5 border border-pink/20 rounded-2xl p-4 mb-10 text-center text-sm">
           <p className="opacity-70">
-            歌い手による、歌い手のためのMIXサービスです。
+            あくまで素人のMIXですので、高度なご要望には応えられない場合があります。
             <br />
-            まずは過去のMIX作品を聴いて、クオリティに納得いただけたらご依頼ください。
+            まずは過去のMIX作品を聴いて、ある程度任せても良いなと感じていただけたらご依頼ください。
           </p>
         </div>
 
