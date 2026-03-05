@@ -4,9 +4,9 @@ export default function PricingPlans() {
       <div className="max-w-5xl mx-auto">
         {/* セクションタイトル */}
         <div className="text-center mb-4">
-          <span className="text-3xl mb-2 block">💰</span>
+          <span className="text-3xl mb-2 block">🎛️</span>
           <h2 className="text-3xl md:text-4xl font-black text-purple mb-2">
-            料金プラン
+            ボーカルミックス依頼
           </h2>
           <p className="text-sm opacity-60 mb-2">
             あなたのニーズで選べる、2つの基本プラン
