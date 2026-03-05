@@ -68,8 +68,8 @@ export default function PricingPlans() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
           <div className="bg-sky/10 rounded-xl p-4 text-center">
             <p className="font-bold text-sky mb-1">修正対応</p>
-            <p className="opacity-70">納品後1時間以内は無料</p>
-            <p className="opacity-50 text-xs">超過分: ¥2,000/h</p>
+            <p className="opacity-70">修正工数が1時間以内まで無料で対応いたします</p>
+            <p className="opacity-50 text-xs">それ以降: ¥2,000/h</p>
           </div>
           <div className="bg-mint/10 rounded-xl p-4 text-center">
             <p className="font-bold text-foreground mb-1">納期</p>
