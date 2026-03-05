@@ -1,26 +1,75 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --pink: #ff6b9d;
+  --pink-light: #ffa0c0;
+  --purple: #c084fc;
+  --purple-light: #e0b0ff;
+  --mint: #6ee7b7;
+  --sky: #7dd3fc;
+  --yellow: #fde68a;
+  --background: #fff5f9;
+  --foreground: #4a3348;
+  --card-bg: #ffffff;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-pink: var(--pink);
+  --color-pink-light: var(--pink-light);
+  --color-purple: var(--purple);
+  --color-purple-light: var(--purple-light);
+  --color-mint: var(--mint);
+  --color-sky: var(--sky);
+  --color-yellow: var(--yellow);
+  --color-card-bg: var(--card-bg);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Zen Maru Gothic', Arial, Helvetica, sans-serif;
+}
+
+/* グラデーション背景アニメーション */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-gradient-animate {
+  background: linear-gradient(-45deg, #ff6b9d, #c084fc, #7dd3fc, #ffa0c0);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+
+/* ふわふわアニメーション */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* 音符アニメーション */
+@keyframes noteFloat {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-60px) rotate(20deg); opacity: 0; }
+}
+
+.animate-note {
+  animation: noteFloat 2s ease-out infinite;
+}
+
+/* カードホバーエフェクト */
+.mix-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mix-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(255, 107, 157, 0.2);
 }
