@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section id="about" className="py-20 px-4 bg-white">
@@ -12,8 +14,14 @@ export default function About() {
 
         <div className="flex flex-col md:flex-row gap-10 items-center">
           {/* アバター */}
-          <div className="w-48 h-48 rounded-3xl bg-gradient-to-br from-pink to-purple flex items-center justify-center text-7xl shadow-lg shrink-0">
-            🎤
+          <div className="w-48 h-48 rounded-3xl overflow-hidden shadow-lg shrink-0">
+            <Image
+              src="/images/profile.png"
+              alt="歌い手せーちゃん"
+              width={192}
+              height={192}
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* プロフィール文 */}
