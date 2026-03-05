@@ -26,7 +26,7 @@ export default function MasteringOption() {
           <p className="text-sm opacity-70 text-center mb-6">
             提携するプロのエンジニアに、あなたの楽曲の最終仕上げを依頼できます。
             <br />
-            MIXだけでは到達できない、商業レベルのクオリティを手に入れませんか？
+            メジャーアーティストや大手歌い手を現役で担当するエンジニアが最終調整を行います
           </p>
 
           {/* メリット */}
