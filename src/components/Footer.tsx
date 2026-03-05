@@ -8,10 +8,10 @@ export default function Footer() {
         <p className="opacity-90 mb-8 text-sm md:text-base">
           ボーカルMIXのご依頼やご質問はお気軽にどうぞ！
           <br />
-          X(Twitter)のDMまたはメールにてお待ちしています。
+          X(Twitter)のDMにてお待ちしています。
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        <div className="flex justify-center mb-12">
           <a
             href="https://x.com/sechanutau"
             target="_blank"
@@ -19,12 +19,6 @@ export default function Footer() {
             className="inline-flex items-center justify-center gap-2 bg-white text-pink font-bold px-6 py-3 rounded-full hover:scale-105 transition-transform shadow-lg"
           >
             X(Twitter)でDMする
-          </a>
-          <a
-            href="mailto:example@example.com"
-            className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm text-white font-bold px-6 py-3 rounded-full border border-white/30 hover:bg-white/30 transition-colors"
-          >
-            メールで問い合わせ
           </a>
         </div>
 
