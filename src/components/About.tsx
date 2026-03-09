@@ -54,24 +54,24 @@ export default function About() {
             </div>
 
             {/* SNSリンク */}
-            <div className="flex gap-4">
+            <div className="flex gap-3">
               <a
                 href="https://x.com/sechanutau"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-foreground text-white flex items-center justify-center text-sm font-bold hover:bg-pink transition-colors"
+                className="hover:scale-110 transition-transform"
                 aria-label="X (Twitter)"
               >
-                X
+                <Image src="/images/cat-x.png" alt="X" width={40} height={40} />
               </a>
               <a
                 href="https://www.youtube.com/@sechanutau"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-red-500 text-white flex items-center justify-center text-sm font-bold hover:bg-pink transition-colors"
+                className="hover:scale-110 transition-transform"
                 aria-label="YouTube"
               >
-                YT
+                <Image src="/images/cat-youtube.png" alt="YouTube" width={40} height={40} />
               </a>
             </div>
           </div>

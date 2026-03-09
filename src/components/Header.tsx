@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,27 +31,25 @@ export default function Header() {
             お問い合わせ
           </a>
 
-          {/* SNS猫ボタン */}
+          {/* SNS猫アイコン */}
           <div className="flex gap-2 ml-2">
             <a
               href="https://x.com/sechanutau"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-9 h-9 bg-pink/10 hover:bg-pink/20 rounded-full flex items-center justify-center transition-colors group"
+              className="hover:scale-110 transition-transform"
               aria-label="X (Twitter)"
             >
-              <span className="absolute -top-1 -left-0.5 text-[8px]">🐱</span>
-              <span className="text-xs font-black text-pink group-hover:scale-110 transition-transform">X</span>
+              <Image src="/images/cat-x.png" alt="X" width={28} height={28} />
             </a>
             <a
               href="https://www.youtube.com/@sechanutau"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-9 h-9 bg-red-50 hover:bg-red-100 rounded-full flex items-center justify-center transition-colors group"
+              className="hover:scale-110 transition-transform"
               aria-label="YouTube"
             >
-              <span className="absolute -top-1 -left-0.5 text-[8px]">🐱</span>
-              <span className="text-xs font-black text-red-500 group-hover:scale-110 transition-transform">YT</span>
+              <Image src="/images/cat-youtube.png" alt="YouTube" width={28} height={28} />
             </a>
           </div>
         </nav>
@@ -89,21 +88,17 @@ export default function Header() {
               href="https://x.com/sechanutau"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-10 h-10 bg-pink/10 rounded-full flex items-center justify-center"
               onClick={() => setIsOpen(false)}
             >
-              <span className="absolute -top-1 -left-0.5 text-[8px]">🐱</span>
-              <span className="text-sm font-black text-pink">X</span>
+              <Image src="/images/cat-x.png" alt="X" width={32} height={32} />
             </a>
             <a
               href="https://www.youtube.com/@sechanutau"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-10 h-10 bg-red-50 rounded-full flex items-center justify-center"
               onClick={() => setIsOpen(false)}
             >
-              <span className="absolute -top-1 -left-0.5 text-[8px]">🐱</span>
-              <span className="text-sm font-black text-red-500">YT</span>
+              <Image src="/images/cat-youtube.png" alt="YouTube" width={32} height={32} />
             </a>
           </div>
         </nav>
