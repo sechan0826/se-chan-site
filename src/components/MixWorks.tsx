@@ -43,10 +43,10 @@ function YouTubeEmbed({ videoId }: { videoId: string }) {
 
 export default function MixWorks() {
   return (
-    <section id="works" className="py-20 px-4">
+    <section id="works" className="py-12 px-4">
       <div className="max-w-6xl mx-auto">
         {/* セクションタイトル */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-10">
           <span className="text-3xl mb-2 block">🎧</span>
           <h2 className="text-3xl md:text-4xl font-black text-pink mb-2">
             作品集
