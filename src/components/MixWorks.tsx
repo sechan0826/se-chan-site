@@ -51,9 +51,6 @@ export default function MixWorks() {
           <h2 className="text-3xl md:text-4xl font-black text-pink mb-2">
             作品集
           </h2>
-          <p className="text-sm opacity-60">
-            せーちゃんの歌声とMIXをぜひ聴いてみてください
-          </p>
         </div>
 
         {/* カテゴリごとに表示 */}

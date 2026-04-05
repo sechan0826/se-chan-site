@@ -8,9 +8,6 @@ export default function PricingPlans() {
           <h2 className="text-3xl md:text-4xl font-black text-purple mb-2">
             ボーカルミックス依頼
           </h2>
-          <p className="text-sm opacity-60 mb-2">
-            あなたのニーズで選べる、2つの基本プラン
-          </p>
         </div>
 
         {/* 注意書き */}
