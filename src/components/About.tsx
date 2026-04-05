@@ -42,7 +42,7 @@ export default function About() {
                 "ボカロ曲カバー",
                 "原曲キー",
                 "ボーカルMIX",
-                "ピッチ補正",
+                "ボーカルエディット",
               ].map((skill) => (
                 <span
                   key={skill}
