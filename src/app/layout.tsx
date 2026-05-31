@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Zen_Maru_Gothic } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const zenMaru = Zen_Maru_Gothic({
@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   description: "歌い手せーちゃんの公式サイト。少年のような歌声でボカロ楽曲を中心に歌ってみたを投稿中。ボーカルMIXのご依頼も承っています。",
 };
 
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -21,10 +23,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={zenMaru.className}>
-        {children}
-        <Analytics />
-      </body>
+      <body className={zenMaru.className}>{children}</body>
+      {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
     </html>
   );
 }
