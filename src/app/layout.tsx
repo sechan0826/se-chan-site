@@ -14,7 +14,8 @@ export const metadata: Metadata = {
   description: "歌い手せーちゃんの公式サイト。少年のような歌声でボカロ楽曲を中心に歌ってみたを投稿中。ボーカルMIXのご依頼も承っています。",
 };
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+// GA4 measurement ID is a public key — safe to commit. Env var takes precedence if set.
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-ME1XT6C4XB";
 
 export default function RootLayout({
   children,
